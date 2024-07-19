@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: SbMyPracticeApp
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/SbMyPracticeDB
+    username: admin
+    password: admin
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+      dialect: org.hibernate.dialect.MySQL8Dialect
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+jwt:
+  secret: E71481A3A9E55CBE78620DD83B5A8FF9ED54107F5DDF47DD4B51756529C474A9
+
+server:
+  port: 8082
+  servlet:
+    context-path: /api/v1
