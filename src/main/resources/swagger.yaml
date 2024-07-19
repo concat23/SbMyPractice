@@ -54,10 +54,12 @@ components:
     MemberResponseDto:
       type: object
       properties:
-        id:
-          type: string
         email:
           type: string
+          example: admin@gmail.com
+        nickname:
+          type: string
+          example: Admin
   securitySchemes:
     jwtAuth:
       type: http
